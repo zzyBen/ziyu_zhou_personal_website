@@ -42,9 +42,9 @@
       </div>
     </div>
 
-    <!-- <div class="footer" v-if="data.footer">
+    <div class="footer" v-if="data.footer">
       {{ data.footer }}
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -65,6 +65,7 @@ export default {
 @import './styles/config.styl'
 
 .about-card
+  margin-top 20px
   width 100%
   display: flex
   flex-direction column

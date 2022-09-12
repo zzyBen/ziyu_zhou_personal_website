@@ -32,7 +32,7 @@
 
 <script>
 export default {
-  props: ['image', 'cv', 'frontmatter'],
+  props: ['frontmatter'],
 
   computed: {
     data() {
