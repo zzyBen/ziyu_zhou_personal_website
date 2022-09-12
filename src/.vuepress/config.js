@@ -22,6 +22,7 @@ export default defineUserConfig({
             { text: 'About', link: '/about/' },
             { text: 'Projects', link: '/projects/' },
             { text: 'Guide', link: '/guide/' },
+            { text: 'Article', link: '/article/' },
             { text: 'GitHub', link: 'https://github.com/zzyBen' },
         ],
 

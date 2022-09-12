@@ -176,5 +176,4 @@
     }
     ```
 
-
-
+1. Update nav bar and side bar

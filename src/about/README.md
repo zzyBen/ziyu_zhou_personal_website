@@ -17,8 +17,6 @@ socials:
 actions:
 - text: Projects
   link: /projects/
-# - text: Blog
-#   link: https://zzyben.github.io/
 # - text: CV
 #   link: /article/
 footer: Made with ♥ by Ziyu. Powered by VuePress
