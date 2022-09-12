@@ -30,7 +30,12 @@ export default defineUserConfig({
             '/guide/': [
               {
                 text: 'Guide',
-                children: ['/guide/README.md', '/guide/getting-started.md'],
+                children: [
+                  '/guide/README.md',
+                  '/guide/advanced.md',
+                  '/guide/customize.md',
+                  '/guide/getting-started.md'
+                ],
               },
             ],
         },
