@@ -34,7 +34,7 @@
       </div>
       <div class="actions">
         <div v-for="item in data.actions">
-          <a :href="item.link" class="button"
+          <a :href="item.link.startsWith('/')?$withBase(item.link):item.link" class="button"
               :target="item.link.startsWith('/')?'':'_blank'">
             {{item.text}}
           </a>
