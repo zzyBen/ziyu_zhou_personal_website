@@ -140,3 +140,42 @@
     }
     ```
 
+# 3. Add original Harry Porter template
+1. Add npm `stylus` package
+    ```bash
+    yarn add -D stylus
+    ```
+
+1. Copy the folders under ``.
+    ```text
+    |-- .vuepress
+        |-- components
+        |-- public
+        |-- styles
+    ```
+    **Warning**:
+    - `style` in VuePress V2 must be set in `.vuepress/styles/index.scss`.
+
+1. Register components
+    ```bash
+    yarn add -D @vuepress/plugin-register-components@next
+    ```
+
+    Tutorial
+    ```js
+    import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+    import { getDirname, path } from '@vuepress/utils'
+    const __dirname = getDirname(import.meta.url)
+
+    export default {
+      plugins: [
+        registerComponentsPlugin({
+          // options
+          componentsDir: path.resolve(__dirname, './components'),
+        }),
+      ],
+    }
+    ```
+
+
+

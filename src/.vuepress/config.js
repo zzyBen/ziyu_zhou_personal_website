@@ -1,5 +1,13 @@
 import { defineUserConfig } from 'vuepress'
+
+// Config default theme sidebar and navbar
 import { defaultTheme } from 'vuepress'
+
+// Register Components in the folders
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
+import { getDirname, path } from '@vuepress/utils'
+const __dirname = getDirname(import.meta.url)
+
 
 export default defineUserConfig({
     base: '/ziyu_zhou_personal_website/',
@@ -26,4 +34,10 @@ export default defineUserConfig({
             ],
         },
     }),
+    plugins: [
+      registerComponentsPlugin({
+        // options
+        componentsDir: path.resolve(__dirname, './components'),
+      }),
+    ],
 })
