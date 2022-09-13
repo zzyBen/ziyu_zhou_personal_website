@@ -1,9 +1,16 @@
-# Getting Started
+# Test
 
+## Links
 [Home](../)
 
 [projects](../projects/)
 
+## Images
+### From public asset folder
+![](/icons/github.svg)
+
+### From relative folders
+![](./images/profile.jpg)
 <style lang="stylus">
 
 .theme-container.about-page .page
