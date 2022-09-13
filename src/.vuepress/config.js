@@ -10,8 +10,8 @@ const __dirname = getDirname(import.meta.url)
 
 
 export default defineUserConfig({
-    base: '/ziyu_zhou_personal_website/',
-    // base: '/',
+    // base: '/ziyu_zhou_personal_website/',
+    base: '/',
     dest: './docs',
     lang: 'en-US',
     title: "Ziyu Zhou's personal website",
